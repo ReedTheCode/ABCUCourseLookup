@@ -6,7 +6,7 @@ This project highlights the ability to work with structured data, implement sear
 
 In the scenario the institution required an application capable of loading course data from a file and allowing users to interactively retrieve and view course information.
 
-The application presents a menu that allows the user to:
+The application presents a CLI menu that allows the user to:
 <ul>
   <li>Load course data from a file</li>
   <li>Display an alphanumeric list of all Computer Science courses</li>
@@ -14,7 +14,10 @@ The application presents a menu that allows the user to:
   <li>Exit the application</li>
 </ul>
 
-</hr>
+<h2>Contents:</h2>
+<ul>
+  <li>ProjectTwo.cpp</li>
+</ul>
 
 <h1>What Was Done Well</h1>
 <emp>Feedback on this project is still pending...</emp>
