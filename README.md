@@ -32,7 +32,7 @@ The application presents a CLI menu that allows the user to:
 </ol>
 
 <h1>What Could Be Improved</h1>
-<p>While the project received a good score with great comments on implementation, there were some areas that garnered feedback where they could be improved:</p>
+<p>Even though the project received a good score with great comments on implementation, there were some areas that garnered feedback where they could be improved:</p>
 <ol>
   <li><strong>Input - </strong> Using >> for the filename is ok in this situation, but it won't allow for spaces</li>
   <ul>
