@@ -44,7 +44,7 @@ The application presents a CLI menu that allows the user to:
   </ul>
   <li><strong>Course List - </strong> consider replacing the header with something like "Course List:" to better match the spec</li>
   <ul>
-    <li>While this is project-specific, the concept is agnostic and I can see how this is better suited for user experience and readability</li>
+    <li>While this is project-specific, the concept is project-agnostic and I can see how this is better suited for user experience and readability</li>
   </ul>
   <li><strong>Industry Standard Best Practices - </strong> A few more brief comments above the helper functions and guiding STOI from potential overflow would strengthen robustness</li>
   <ul>
