@@ -20,10 +20,37 @@ The application presents a CLI menu that allows the user to:
 </ul>
 
 <h1>What Was Done Well</h1>
-<emp>Feedback on this project is still pending...</emp>
+<p>Feedback from this project indicated the following was done well:</p>
+<ol>
+  <li><strong>Input - </strong> prompting for a filename, opening the file, trimming the fields, and normalizing course IDs and clear error messages for malformed records</li>
+  <li><strong>Menu - </strong> requirements were implemented correctly: loop with numeric validation and exiting on option 9 while requiring data to be loaded before other actions</li>
+  <li><strong>Loading Data Structure - </strong> the loader enforces required fields, uppercase IDs, clears previous data before reload, and continues safely bast bad lines</li>
+  <li><strong>Course List - </strong> alphanumeric course ID sorting and printing each with its title</li>
+  <li><strong>Course Information - </strong> ensuring lookup is case-insensitive and both prerequisite IDs with their titles are printed, clear not-found message, and the "Prerequisites: None" path is handled appropriately</li>
+  <li><strong>Industry Standard Best Practices - </strong> including function decomposition, naming, and targeted error messages as well as validating menu input before conversion to int</li>
+  
+</ol>
 
 <h1>What Could Be Improved</h1>
-<emp>Feedback on this project is still pending...</emp>
+<p>While the project received a good score with great comments on implementation, there were some areas that garnered feedback where they could be improved:</p>
+<ol>
+  <li><strong>Input - </strong> Using >> for the filename is ok in this situation, but it won't allow for spaces</li>
+  <ul>
+    <li>In the future I probably should utilize std::getLine() as the >> (extraction) operator will stop reading a line once it encounters a space</li>
+  </ul>
+  <li><strong>Loading Data Structure - </strong> should consider detecting and reporting duplicate course IDs and unknown prerequisite references at load time</li>
+  <ul>
+    <li>While I can see this being situational, I can also see how having this report at load time is better for the end-user so they're aware right away</li>
+  </ul>
+  <li><strong>Course List - </strong> consider replacing the header with something like "Course List:" to better match the spec</li>
+  <ul>
+    <li>While this is project-specific, the concept is agnostic and I can see how this is better suited for user experience and readability</li>
+  </ul>
+  <li><strong>Industry Standard Best Practices - </strong> A few more brief comments above the helper functions and guiding STOI from potential overflow would strengthen robustness</li>
+  <ul>
+    <li>While I improved on best practices from my other courses, the theme of this feedback seems quite common - more comments</li>
+  </ul>
+</ol>
 
 <h1>Challenges</h1>
 The most challenging aspect of this project was selecting and implementing an appropriate data structure to balance performance and simplicity. The searching and sorting requirements forced me to carefully consider the complexities of time and program behavior as data scales.
